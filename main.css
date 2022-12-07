@@ -3,7 +3,14 @@
   font-family: sans-serif;
 }
 
-.clock-holder {
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-holder {
   overflow: hidden;
   width: 200px;
   height: 200px;
@@ -14,11 +21,29 @@
   font-size: 30px;
 }
 
-.clock {
+.timer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   background-color: #4472c4;
+}
+
+.timer-controls {
+  padding: 1rem;
+}
+
+.timer-controls button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #4472c4;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.timer-controls button:hover {
+  background-color: #3c62a3;
 }
